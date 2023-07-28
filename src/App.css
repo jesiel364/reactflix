@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body, #root{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #b3b1ab;
+  display: flex;
+  background-image: url('https://wpassets.brainstation.io/app/uploads/2017/04/13100509/Netflix-Background.jpg');
+
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+#wrapper{
+  background-color:rgba(0,0,0,.50);
+  /* background-color: #E50914; */
+  height: 100%;
+  margin: 0;
+  padding:0;
+  width: 100%;
+ display: flex;
+  flex-direction: column;
+}
+
+#logo{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 66px;
+  color:#E50914;
+/*   background-color: #555; */
+  margin:0;
+  margin-left: 16px;
+}
+
+#container{
+  background-color:rgba(1,1,1,.75);
+  /* background-color: red; */
+  width: 390px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+    margin-top:40px;
+  border-radius: 8px;
+  padding: 60px;
+ 
+}
+
+form{
+  margin:0;
+/*   background-color: blue; */
+  padding:0px;
+  display:flex;
+  flex-direction:column;
+}
+
+#title{
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 600;
+  margin:0;
+  padding: 0;
+  padding-bottom:24px;
+}
+
+input{
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+  background-color: #333333;
+  font-weight: 400;
+  padding: 12px 26px 12px 26px;
+  color: #8B8989;
+  height: 26px;
+  display: flex;
+/*   min-width: 400px; */
+  margin:0;
+  outline: none;
+
+}
+
+input, button{
+  border: none;
+  border-radius: 4px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #686868;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+  display: none;
+  position: absolute;
+/*   top: 0px; */
+}
+
+a, p{
+  text-decoration: none;
+ color: #b3b1ab;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.email-lb, .pwd-lb{
+     color: #838383;
+  font-size: 16px;
+  transition: all 0.3s;
+    cursor: text;
+}
+
+.email-lb{
+/*   background-color: green; */
+  position: relative;
+  top: -34px;
+  left: 20px;
+/*   display: none; */
+
+}
+
+.pwd-lb{
+  position: relative;
+  top: -72px;
+  left: 20px;
+}
+
+input:focus + .email-lb {
+    top: -44px;
+    left: 26px;
+    font-size: 12px;
+/*     color: #673ab7; */
+
+}
+
+input:focus + .pwd-lb {
+     top: -82px;
+    left: 26px;
+    font-size: 12px;
+/*     color: #673ab7; */
+}
+
+
+#password{
+   margin-bottom: 38px;
+}
+
+button{
+  background-color: #E50914;
+  padding: 12px;
+  color: #fefefe;
+  font-size:16px;
+  font-weight: 600;
+}
+
+#check{
+  display: flex;
+}
+
+input:focus{
+  outline: none;
+  background-color: #363636;
+  padding-bottom: 2px;
+  padding-top: 22px;
+}
+
+input[type=checkbox] {
+  margin-top:  -4px;
+  margin-right: 5px;
+  background-color: red;
+}
+
+#login-bottom{
+  display: flex;
+  margin-top: 14px;
+  justify-content: space-between;
+}
+
+#new{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+span{
+  color: #fefefe;
+}
+
+.bottom{
+    background-color:rgba(1,1,1,.75);
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 100%;
+  font-size: 16px;
+
+}
+
+.bottom #content{
+
+  margin:40px;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav a{
+  margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#select{
+  background-color: #000000;
+    color: #b3b1ab;
+  padding:12px;
+  font-size: 12px;
+/*   padding-right: 20px; */
+}
+
+#select.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+hr{
+  display: none;
+  width:100%;
+  background-color:#B3B1AB;
+  
+}
+
+@media (max-width: 740px){
+  #container{
+  background-color:rgba(1,1,1,1);
+/*   background-color: red; */
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+/*   margin: auto; */
+    margin-top:0px;
+  border-radius: 8px;
+  padding: 20px;
+}
+  
+  form{
+  margin:0;
+/*   background-color: blue; */
+  padding:0px;
+  display:flex;
+  flex-direction:column;
+}
+  
+  #wrapper{
+     background-color:rgba(1,1,1,1);
+  }
+  hr{
+  display:block;
+  border: .5px solid #B3B1AB;
+}
+  .nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+  
+  .bottom{
+     margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #content{
+/*     background-color: green; */
+  }
+  
+}
+
+
+
+@media (max-width: 440px){
+  #logo{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  color:#E50914;
+/*   background-color: #555; */
+  margin:0;
+  margin-left: 16px;
+  margin-top:10px;
+}
+  
+  #new{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+  .nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+  
+}
+
+#me{
+  text-align: center;
+}
