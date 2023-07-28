@@ -42,7 +42,7 @@ display: none;
   background-color:rgba(1,1,1,.75);
   /* background-color: red; */
   width: 390px;
-  min-width: 300px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -290,6 +290,11 @@ hr{
   margin:0;
   margin-left: 16px;
   margin-top:10px;
+}
+
+#container{
+  /* background-color: red; */
+  width: 350px;
 }
   
   #new{
