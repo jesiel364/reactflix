@@ -87,7 +87,7 @@ function App() {
     <input onFocus={(e) => pHover(e)} value={password} onChange={(evt) => handlePwd(evt)}
  id='password' type="password" placeholder="" />
         <label ref={pwd} className='pwd-lb'>Senha</label>
-        
+
    <button>Entrar</button>
     
     <div id='login-bottom'>
@@ -100,8 +100,11 @@ function App() {
     </div>
   </form>
 
-    <p id='new'>Novo por aqui?<a href="#"> <span>Assine agora.</span></a></p>
+<div id='new'>
+    <p >Novo por aqui?<a href="#"> <span>Assine agora.</span></a></p>
 
+    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a id='saiba' href='#'>Saiba mais.</a></p>
+</div>
 </div>
 <hr></hr>
 
